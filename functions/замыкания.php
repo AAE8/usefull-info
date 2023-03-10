@@ -5,7 +5,7 @@
 $mess = "текст до момента создания функции";
 
 $test = function (array $some) use ($mess) {
-	if (isset($some) && count() > )
+	if (isset($some) && count() > ) 
 } 
               
 ?> 
