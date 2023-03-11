@@ -7,33 +7,32 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="form3.php" method="post" target="_blank">
-        <!-- Различные поля -->
-        <input type="text" name="name" placeholder="Name"><br>
-        <input type="text" name="age" placeholder="age"><br>
-        <input type="password" name="password" placeholder="password"><br>
-        <input type="hidden" name="hidden" value="test"><br>
-        <!-- Пример чекбоксов -->
-        <input type="checkbox" name="PHP">PHP<br>
-        <input type="checkbox" name="JS">JS<br>
-        <input type="checkbox" name="Python">Python<br>
-        <input type="checkbox" name="C#">C#<br><br>
-        <!-- Пример с выбором цвета -->
-        <input type="checkbox" name="color" value="red">Red<br>
-        <input type="checkbox" name="color" value="green">Green<br>
-        <input type="checkbox" name="color" value="blue">Blue<br><br>
-        <!-- Выпадающий список -->
-        <select name="period[]" multiple size="3">
+    <h1>Опрос</h1>
+    <form action="form4.php" method="post" target="_blank">
+        <h3>Укажите ФИО и возраст</h3>
+        <input type="text" name="name" placeholder="ФИО"><br>
+        <input type="number" name="age" placeholder="Возраст">
+        <h3>Укажите уровень образования</h3>
+        <select name="education[]" multiple size="5">
             <option>Cделайте выбор</option>
-            <option value="1">Месяц</option>
-            <option value="6">Полгода</option>
-            <option value="12">Год</option>
-            <option value="0">Не помню</option>
-        </select><br><br>
-        <!-- Переключатели -->
-        <input type="radio" name="slide" value="1">
-        <input type="radio" name="slide" value="2">
-        <input type="radio" name="slide" value="3"><br><br>
+            <option value="Начальное">Начальное</option>
+            <option value="Среднее">Среднее</option>
+            <option value="Среднее профессиональное">Среднее профессиональное</option>
+            <option value="Высшее">Высшее</option>
+        </select>
+        <h3>Укажите пол</h3>
+        <input type="radio" name="gender" value="мужской">Муж.
+        <input type="radio" name="gender" value="женский">Жен.
+        <h3>Владение языками</h3>
+        <select name="languages[]" multiple size="5">
+            <option>Cделайте выбор</option>
+            <option value="английский">Английский</option>
+            <option value="русский">Русский</option>
+            <option value="китайский">Китайский</option>
+            <option value="лезгинский">Лезгинский</option>
+        </select>
+        <h3>Проверка на робота</h3>
+        <textarea name="check" cols="21" rows="1" value="4" placeholder="Сколько будет два + 2?"></textarea><br>
         <!-- Кнопка отправки данных -->
         <input type="submit" value="Отправить">
     </form>
