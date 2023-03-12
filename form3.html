@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="form3.php" method="post" target="_blank">
+        <!-- Различные поля -->
+        <input type="text" name="name" placeholder="Name"><br>
+        <input type="text" name="age" placeholder="age"><br>
+        <input type="password" name="password" placeholder="password"><br>
+        <input type="hidden" name="hidden" value="test"><br>
+        <!-- Пример чекбоксов -->
+        <input type="checkbox" name="PHP">PHP<br>
+        <input type="checkbox" name="JS">JS<br>
+        <input type="checkbox" name="Python">Python<br>
+        <input type="checkbox" name="C#">C#<br><br>
+        <!-- Пример с выбором цвета -->
+        <input type="checkbox" name="color" value="red">Red<br>
+        <input type="checkbox" name="color" value="green">Green<br>
+        <input type="checkbox" name="color" value="blue">Blue<br><br>
+        <!-- Выпадающий список -->
+        <select name="period[]" multiple size="3">
+            <option>Cделайте выбор</option>
+            <option value="1">Месяц</option>
+            <option value="6">Полгода</option>
+            <option value="12">Год</option>
+            <option value="0">Не помню</option>
+        </select><br><br>
+        <!-- Переключатели -->
+        <input type="radio" name="slide" value="1">
+        <input type="radio" name="slide" value="2">
+        <input type="radio" name="slide" value="3"><br><br>
+        <!-- Кнопка отправки данных -->
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>

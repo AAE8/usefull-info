@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Опрос</h1>
+    <form action="form4.php" method="post" target="_blank">
+        <h3>Укажите ФИО и возраст</h3>
+        <input type="text" name="name" placeholder="ФИО"><br>
+        <input type="number" name="age" placeholder="Возраст">
+        <h3>Укажите уровень образования</h3>
+        <select name="education[]" multiple size="5">
+            <option>Cделайте выбор</option>
+            <option value="Начальное">Начальное</option>
+            <option value="Среднее">Среднее</option>
+            <option value="Среднее профессиональное">Среднее профессиональное</option>
+            <option value="Высшее">Высшее</option>
+        </select>
+        <h3>Укажите пол</h3>
+        <input type="radio" name="gender" value="мужской">Муж.
+        <input type="radio" name="gender" value="женский">Жен.
+        <h3>Владение языками</h3>
+        <select name="languages[]" multiple size="5">
+            <option>Cделайте выбор</option>
+            <option value="английский">Английский</option>
+            <option value="русский">Русский</option>
+            <option value="китайский">Китайский</option>
+            <option value="лезгинский">Лезгинский</option>
+        </select>
+        <h3>Проверка на робота</h3>
+        <textarea name="check" cols="21" rows="1" value="4" placeholder="Сколько будет два + 2?"></textarea><br>
+        <!-- Кнопка отправки данных -->
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>
