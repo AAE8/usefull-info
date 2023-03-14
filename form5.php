@@ -7,6 +7,6 @@ if(move_uploaded_file($_FILES['filename']['tmp_name'], temp)) {
     echo "Файл скопирован на сервер";
 } else {
     echo "Файл не скопирован на сервер";
-}
+} 
 
 ?>
