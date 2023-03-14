@@ -1,28 +1,9 @@
 <?php
-setcookie('test', plus());
+// Дерево документа
+echo $_SERVER['DOCUMENT_ROOT']."<br>";
+// Некие параметры относительно типа документа
+echo $_SERVER['HTTP_ACCEPT']."<br>";
 
-echo "Суперглобальные массивы<br>";
-
-// $_GET - содержит в себе get параметры
-// $_POST - содержит в себе POST параметры, передаются в теле документа
-// $_FILES - работа с загруженными файлами на сервер
-// $_COOKIE - обеспечивает работу с кукисами (COOKIE)
-// $_SESSION - для работы с сессиями
-// $_REQUEST - прокладка для доступка к механизму сессий, хранит инфу при переходе между страницами
-// $_SERVER - содержит информацию о скрипте и сервере
-// $GLOBALS - содержит все переменные всех глобальных массивов
-
-// setcookie(name=value,expire);
-
-echo "Счетчик посещений сервера/страницы {$_COOKIE['test']}";
-
-function plus(){
-    if(isset($_COOKIE['test'])) {
-        $_COOKIE['test']++;
-    }else{
-        $_COOKIE['test'] = 1;
-    }
-    return $_COOKIE['test'];
-}
+echo $_SERVER['HTTP_ACCEPT_LANGUAGE']."<br>";
 
 ?>
