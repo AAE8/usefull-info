@@ -9,10 +9,6 @@
 if ($_FILES['filename']['size'] > 2 * 1024 * 1024) {
     exit ('Размер файла превышает 2 мегабайта');
 } else {
-<<<<<<< HEAD
-    echo "Файл не скопирован на сервер";
-} 
-=======
     if(move_uploaded_file($_FILES['filename']['tmp_name'], 'temp/' . $_FILES['filename']['name'])) {
     echo "Файл скопирован на сервер<hr>";
     echo 'Характеристики нашего файла:<br>';
@@ -26,6 +22,5 @@ if ($_FILES['filename']['size'] > 2 * 1024 * 1024) {
     echo "Файл не загружен";
 }
 }
->>>>>>> cb2c398514ca8b04a91f614bd41657995b761198
 
 ?>
