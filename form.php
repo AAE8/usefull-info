@@ -3,7 +3,7 @@
 $name = htmlspecialchars($_POST['msg']);
 $date = date('d:m:y');
 
-echo "Здравствуйте $name. " . "Сегодня: $date.";
+echo "Здравствуйте $name. " . "Сегодня: $date."; 
 
 
 
