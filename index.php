@@ -1,50 +1,30 @@
 <?php
-// Методы
 
-class Hi {
-    public function hello () {
-        return 'Hello everybody';
+class Operations {
+    private $a;
+    private $b;
+    private $c;
+
+    public function setA ($a) {
+        $this->a = $a;
     }
 
-    public function bye () {
-        return 'Bye';
-    }
-}
-
-$obj = new Hi;
-
-echo $obj->hello() . "<br>";
-echo $obj->bye() . "<br>";
-
-// var_dump($obj);
-
-class Family {
-    private $boy;
-    private $girl;
-
-    public function setNameBoy($boy) {
-        $this->boy = $boy;
+    public function setB ($b) {
+        $this->b = $b;
     }
 
-    public function setNameGirl($girl) {
-        $this->girl = $girl;
-    }
-    public function getNameBoy(){
-        return $this->boy;
-    }
-    public function getNameGirl(){
-        return $this->boy;
+    public function setA ($a) {
+        $this->a = $a;
     }
 
-    public function family(){
-        return $this->getNameGirl() . " и " . $this->getNameBoy() . " семья!";
+    public function mult ($a,$b) {
+        echo $a * $b = $c;
+        return $c;
     }
 }
 
-$family = new Family;
+$operations2 = new Operations;
+$operations2->mult(1,2);
 
-$family->setNameBoy('Ник');
-$family->setNameGirl('Нина');
 
-echo $family->family();
 ?>
