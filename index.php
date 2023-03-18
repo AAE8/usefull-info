@@ -15,6 +15,6 @@ echo $_SERVER['HTTP_USER_AGENT']."<br>";
 echo $_SERVER['REMOTE_ADDR']."<br>";
 // Абсолютный путь исполняемого файла
 echo $_SERVER['SCRIPT_FILENAME']."<br>";
-// 
+//  
 
 ?>
