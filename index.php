@@ -1,5 +1,4 @@
 <?php
-
 class Operations {
     private $a;
     private $b;
@@ -13,7 +12,7 @@ class Operations {
         $this->b = $b;
     }
 
-    public function setA ($a) {
+    public function getC ($a) {
         $this->a = $a;
     }
 
@@ -25,6 +24,4 @@ class Operations {
 
 $operations2 = new Operations;
 $operations2->mult(1,2);
-
-
 ?>
