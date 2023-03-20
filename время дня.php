@@ -44,7 +44,7 @@
 //     $times = 4;
 //     echo $times;
 // }
-
+ 
 // Условная конструкция определения суточного времени
 date_default_timezone_set("Japan"); 
 $t = date("H");
